@@ -11,7 +11,8 @@ const loadVoices = () => {
 speechSynth.onvoiceschanged = loadVoices;
 convertBtn.addEventListener('click', () => {
     const enteredText = text.value.trim();
-    if (!enteredText.length) {
+    if (!enteredText.length) 
+    {
         error.textContent = "Nothing to Convert! Enter text in the text area.";
         return;
     }
